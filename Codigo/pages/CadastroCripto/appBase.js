@@ -3,25 +3,25 @@ var db_criptos_inicial = {
     "cripto": [
         {
             "id": 1,
-            "nome": "BTC",
+            "nome": "bitcoin",
             "valor": "5000.00",
-            "moeda": "Dolar",
+            "moeda": "USD",
             "data": "2020-10-26",
             "exchange": "Binance"
         },
         {
             "id": 2,
-            "nome": "ETH",
+            "nome": "ethereum",
             "valor": "14000.00",
-            "moeda": "Dolar",
+            "moeda": "EUR",
             "data": "2021-09-15",
             "exchange": "Binance"
         },
         {
             "id": 3,
-            "nome": "DOGE",
+            "nome": "dogecoin",
             "valor": "1000.00",
-            "moeda": "Real",
+            "moeda": "BRL",
             "data": "2019-10-26 ",
             "exchange": "Mercado Bitcoin"
         }
