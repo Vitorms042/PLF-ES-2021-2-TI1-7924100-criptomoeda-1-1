@@ -7,7 +7,7 @@
 
 * Arthur Alexi Moreira Menezes
 * Hesdras Marciano Ferreira
-* Julio Guedes Bonson Santos
+
 
 ## Professores responsáveis
 
