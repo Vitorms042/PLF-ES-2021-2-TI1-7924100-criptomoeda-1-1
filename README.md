@@ -32,6 +32,6 @@
 
 Este projeto foi desenvolvido usando as seguintes tecnologias:
 
-- [HTML](https://reactjs.org)
-- [CSS](https://firebase.google.com/)
-- [JavaScript](https://www.typescriptlang.org/)
+- HTML
+- CSS
+- JavaScript

@@ -10,7 +10,7 @@
             href="../../assets/images/icon-mentor.svg"
             type="image/x-icon"
         />
-        <title>Dashboard | Mentor</title>
+        <title>Ranking | Mentor</title>
 
         <!-- Bootstrap CSS -->
         <link
@@ -21,8 +21,8 @@
         />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="../../global.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link type="text/css" rel="stylesheet" href="../../global.css" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
 
         <!-- Bootstrap Icons -->
         <link
@@ -33,23 +33,12 @@
     <body>
         <header id="header"></header>
 
-        <main class="root">       
+        <main class="root">
             <section class="container-fluid overview">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-8 cards">
-                            <span class="section-title">Sua carteira<i class="bi bi-bar-chart section-icon"></i></i></span>
-                            <div class="graph">
-                                <img src="../../assets/images/portfolio.svg" alt="">
-                            </div>
-                            <!-- <div class="benchmarks">
-                                <p class="title">SUA CARTEIRA</p>
-                                <p class="description">24,2% NO ANO</p>
-                            </div> -->
-                        </div>
-                        <!-- <div class="divider"></div> -->
-                        <div class="col-12 col-lg-4 cards">
-                            <span class="section-title">Seu progresso<i class="bi bi-globe section-icon"></i></i></span>
+                        <div class="col-12">
+                            <button id="assetID">Bitcoin</button>
                         </div>
                     </div>
                 </div>
@@ -61,7 +50,8 @@
         <!-- JS -->
         <script src="../../App.js"></script>
         <script src="../../components/header.js"></script>
-        <script src="index.js"></script>
+        <script type="module" src="../../services/coingecko.js"></script>
+        <script type="module" src="index.js"></script>
 
         <!-- Bootstrap Bundle with Popper -->
         <script

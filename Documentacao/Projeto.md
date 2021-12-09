@@ -1,21 +1,19 @@
-# Informações do Projeto
-`TÍTULO DO PROJETO`  
+# Informações do projeto
+`Mentor`  
 
 Trabalho Interdisciplinar - Aplicacões Web
 
-`CURSO`
+`Engenharia de Software`
 
-`SEMESTRE`
+`1º semestre`
 
 ## Participantes
 
 Os membros do grupo são: 
-- Fulano da Silva
-- Ciclano Albuquerque
+- Arthur Alexi Moreira Menezes
+- Hesdras Marciano Ferreira
 
-> Inclua a lista dos membros da equipe com seus nomes completos.
-
-# Estrutura do Documento
+# Estrutura do documento
 
 1. [Contexto](1-Contexto.md)
 2. [Especificações do Projeto](2-Especificação.md)
