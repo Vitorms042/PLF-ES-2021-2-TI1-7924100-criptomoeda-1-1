@@ -35,9 +35,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |--------|-------------------------|------------|
 | RF-001 | Permitir que o usuário cadastre suas aplicações | ALTA |
 | RF-002 | Mostrar atualizações de projetos, como notícias e eventos, relacionadas a carteira do usuário | ALTA |
-| RF-003 | Disponibilizar uma página com as informações de um determinado ativo | MÉDIA |
-| RF-004 | Teste de conhecimento sobre o mercado | MÉDIA |
-| RF-005 | Recomendar conteúdos educacionais de acordo com nível de conhecimento do usuário | BAIXA |
+| RF-003 | Permitir que o usuário veja o desempenho de seus investimentos | ALTA |
+| RF-004 | Disponibilizar uma página com as informações de um determinado ativo | MÉDIA |
+| RF-005 | Teste de conhecimento sobre o mercado | MÉDIA |
+| RF-006 | Recomendar conteúdos educacionais de acordo com nível de conhecimento do usuário | BAIXA |
 
 
 ### Requisitos não Funcionais
