@@ -22,12 +22,4 @@ etiquetas:
 
 ## Hospedagem
 
-> Explique como a hospedagem e o lançamento da plataforma foi feita.
->
-> **Links Úteis**:
->
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o
->   HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
+O GitHub Pages foi escolhido para hospedar a aplicação por conta de sua integração o GitHub, a ferramenta de hospedagem de repositórios utilizada pelo projeto. 

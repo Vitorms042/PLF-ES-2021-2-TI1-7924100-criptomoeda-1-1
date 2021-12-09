@@ -13,6 +13,10 @@ Os membros do grupo são:
 - Arthur Alexi Moreira Menezes
 - Hesdras Marciano Ferreira
 
+## Professores responsáveis
+- Roberto Felipe Dias Ferreira Da Rocha
+- Rommel Vieira Carneiro
+
 # Estrutura do documento
 
 1. [Contexto](1-Contexto.md)
