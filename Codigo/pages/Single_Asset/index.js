@@ -9,6 +9,11 @@ const formatCurrency = new Intl.NumberFormat('pt-BR', {
 // Format as number
 const formatNumber = new Intl.NumberFormat('pt-BR');
 
+// 
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+let query = params.id;
+
 // Get screen elements
 const assetId = document.querySelector('.asset-icon');
 const assetRank = document.querySelector('.asset-rank');
@@ -28,49 +33,54 @@ const assetTotalSupply = document.querySelector('.asset-total-supply');
 const assetCirculatingSupply = document.querySelector(
     '.asset-circulating-supply'
 );
+const chart = document.querySelector('.asset-chart');
+
+addEventListener('load', getAPIData)
 
 // Get API data
-function getAPIData(assetPos) {
-    const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=brl&order=market_cap_desc&per_page=100&page=1&sparkline=false`;
+function getAPIData() {
+    const url = `https://api.coingecko.com/api/v3/coins/${query}?tickers=false`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
             // Changes HTML data
-            document.title = `${data[assetPos].name} | Preço, Volume, Perfil | ${siteName}`;
-            assetRank.innerHTML = `${data[assetPos].market_cap_rank}º`;
-            assetName.innerHTML = `${data[assetPos].name} (${data[assetPos].symbol})`;
-            assetIcon.src = data[assetPos].image;
-            high24h.innerHTML = `${'<strong>Máximo (24h):</strong>'} ${formatCurrency.format(
-                data[assetPos].high_24h
+            document.title = `${data.name} | Preço, Volume, Perfil | ${siteName}`;
+            assetRank.innerHTML = `${data.market_cap_rank}º`;
+            assetName.innerHTML = `${data.name} (${data.symbol.toUpperCase()})`;
+            assetIcon.src = data.image.thumb;
+            high24h.innerHTML = `<strong>Máximo (24h):</strong> ${formatCurrency.format(
+                data.market_data.high_24h.brl
             )}`;
-            low24h.innerHTML = `${'<strong>Mínimo (24h):</strong>'} ${formatCurrency.format(
-                data[assetPos].low_24h
+            low24h.innerHTML = `<strong>Mínimo (24h):</strong> ${formatCurrency.format(
+                data.market_data.low_24h.brl
             )}`;
             assetPrice.innerHTML = formatCurrency.format(
-                data[assetPos].current_price
+                data.market_data.current_price.brl
             );
-            assetMarketcap.innerHTML = `${'<strong>Capitalização de mercado:</strong>'} ${formatCurrency.format(
-                data[assetPos].market_cap
+            assetMarketcap.innerHTML = `<strong>Capitalização de mercado:</strong> ${formatCurrency.format(
+                data.market_data.market_cap.brl
             )}`;
-            assetVolume.innerHTML = `${'<strong>Volume (24h):</strong>'} ${formatCurrency.format(
-                data[assetPos].total_volume
+            assetVolume.innerHTML = `<strong>Volume (24h):</strong> ${formatCurrency.format(
+                data.market_data.total_volume.brl
             )}`;
-            assetAth.innerHTML = `${'<strong>Máximo histórico:</strong>'} ${formatCurrency.format(
-                data[assetPos].ath
+            assetAth.innerHTML = `<strong>Máximo histórico:</strong> ${formatCurrency.format(
+                data.market_data.ath.brl
             )}`;
-            assetAtl.innerHTML = `${'<strong>Mínimo histórico:</strong>'} ${formatCurrency.format(
-                data[assetPos].atl
+            assetAtl.innerHTML = `<strong>Mínimo histórico:</strong> ${formatCurrency.format(
+                data.market_data.atl.brl
             )}`;
-            assetTotalSupply.innerHTML = `${'<strong>Fornecimento total:</strong>'} ${formatNumber.format(
-                data[assetPos].total_supply.toFixed(2)
+            assetTotalSupply.innerHTML = `<strong>Fornecimento total:</strong> ${formatNumber.format(
+                data.market_data.total_supply.toFixed(2)
             )}`;
-            assetCirculatingSupply.innerHTML = `${'<strong>Fornecimento em circulação:</strong>'} ${formatNumber.format(
-                data[assetPos].circulating_supply.toFixed(2)
+            assetCirculatingSupply.innerHTML = `<strong>Fornecimento em circulação:</strong> ${formatNumber.format(
+                data.market_data.circulating_supply.toFixed(2)
             )} (${(
-                (data[assetPos].circulating_supply /
-                    data[assetPos].total_supply) *
+                (data.market_data.circulating_supply /
+                    data.market_data.total_supply) *
                 100
-            ).toFixed(2)}%)
-            `;
-        });
+            ).toFixed(2)}%)`
+
+            getAssetInfo(data.symbol)
+            }
+        )
 }

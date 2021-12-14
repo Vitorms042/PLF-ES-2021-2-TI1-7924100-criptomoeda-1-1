@@ -31,20 +31,6 @@
         <header id="header"></header>
 
         <main class="app">
-            <!-- Assets List -->
-            <section class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title">Trending</div>
-                        <span><a id="btcBtn" href="#">Bitcoin</a></span>
-                        <span>|</span>
-                        <span><a id="bnbBtn" href="#">Binance Coin</a></span>
-                        <span>|</span>
-                        <span><a id="adaBtn" href="#">Cardano</a></span>
-                    </div>
-                </div>
-            </section>
-
             <!-- Asset Details -->
             <section class="container">
                 <div class="row">
@@ -75,10 +61,10 @@
                                 src="https://s3.tradingview.com/tv.js"
                             ></script>
                             <script type="text/javascript">
-                                function getChart(ticker) {
+                                function getAssetInfo(symbol){
                                     new TradingView.widget({
                                         autosize: true,
-                                        symbol: `BINANCE:${ticker}BRL`,
+                                        symbol: `BINANCE:${symbol}BRL`,
                                         timezone: 'America/Sao_Paulo',
                                         theme: 'light',
                                         style: '3',
@@ -92,18 +78,6 @@
                                         container_id: 'tradingview_b09eb'
                                     });
                                 }
-                                btcBtn.onclick = () => {
-                                    getAPIData(0);
-                                    getChart('BTC');
-                                };
-                                bnbBtn.onclick = () => {
-                                    getAPIData(2);
-                                    getChart('BNB');
-                                };
-                                adaBtn.onclick = () => {
-                                    getAPIData(4);
-                                    getChart('ADA');
-                                };
                             </script>
                         </div>
                     </div>
