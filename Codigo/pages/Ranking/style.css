@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+}
+
+tbody {
+    background-color: #fafafa;
+}
+
+tr {
+    border-spacing: 50px 100px;
+}
+
+th, td {
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
