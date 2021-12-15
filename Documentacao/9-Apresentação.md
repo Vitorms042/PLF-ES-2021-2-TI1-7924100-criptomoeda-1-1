@@ -10,7 +10,7 @@ Mentor
 ---
 
 ## Conjunto de slides (estrutura)
-![Slide 1](./images/brand.png)
+![Slide 1](./images/slides-mentor-1.jpg)
 ![Slide 2](./images/slides-mentor-2.jpg)
 ![Slide 3](./images/slides-mentor-3.jpg)
 ![Slide 4](./images/slides-mentor-4.jpg)
