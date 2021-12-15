@@ -1,37 +1,11 @@
-[Avaliação dos testes.pdf](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-criptomoeda-1-1/files/7254331/Avaliacao.dos.testes.pdf)
-[Anotações_entrevistas.pdf](https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-criptomoeda-1-1/files/7254333/Anotacoes_entrevistas.pdf)
-# Avaliação da Aplicação
+# Avaliação da aplicação
 
-<span style="color:red">Pré-requisitos: <a href="6-Implementação.md"> Projeto da Solução</a></span>
-
-
-> Apresente os cenários de testes utilizados na realização dos testes da
-> sua aplicação. Escolha cenários de testes que demonstrem os requisitos
-> sendo satisfeitos.
-
-## Plano de Testes
-
-> Enumere quais cenários de testes foram selecionados para teste. Neste
-> tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo
-> de usuários que foi escolhido para participar do teste e as
-> ferramentas utilizadas.
-> 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-
-## Ferramentas de Testes (Opcional)
-
-> Comente sobre as ferramentas de testes utilizadas.
-> 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+## Plano de testes
+| ID | CENÁRIO | REQUISITO RELACIONADO |
+|----|---------|-----------------------|
+| 1 | `Cadastrar um investimento` <br><br> Passo a passo: <br> `1.` Fazer login <br> `2.` Abrir o menu no painel <br> `3.` Clicar em "Portfólio" <br> `4.` Clicar no botão "Adicionar criptomoedas" <br> `5.` Preencher os campos <br> `6.` Clicar no botão "Inserir" <br><br> Após clicar no botão, o sistema mostrará a aplicação em uma lista contento o histórico de aplicações. | RF-001 |
+| 2 | `Ver o desempenho dos investimentos` <br><br> Passo a passo: <br> `1.` Fazer login <br> `2.` Abrir o menu no painel <br> `3.` Clicar em "Portfólio" <br><br> Após o carregamento da página, o usuário poderá ver o valor atual da sua carteira, tendo a opção de ver esse valor em reais, dólares e euros. Verá também um gráfico com a distribuição do patrimônio e uma tabela com o histórico das aplicações e seus desempenhos de acordo com a cotação atual. | RF-003 |
+| 3 | `Ver informações de uma criptomoeda/token` <br><br> Passo a passo: <br> `1.` Fazer login <br> `2.` Clicar no campo de busca no topo da página <br> `3.` Digitar o nome de um ativo e apertar *enter* <br><br> Após o envio da busca, o sistema retornará uma tela com os detalhes do ativo buscado. | RF-004 |
 
 ## Avaliação
-
-> Discorra sobre os resultados do teste. Ressaltando pontos fortes e
-> fracos identificados na solução. Comente como o grupo pretende atacar
-> esses pontos nas próximas iterações. Apresente as falhas detectadas e
-> as melhorias geradas a partir dos resultados obtidos nos testes.
+Os testes foram fundamentais para identificar falhas no desenvolvimento e na experiência do usuário.
