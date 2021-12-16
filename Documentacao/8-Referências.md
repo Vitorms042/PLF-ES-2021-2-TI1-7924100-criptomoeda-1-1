@@ -14,8 +14,8 @@
 > **B3**. A Descoberta da Bolsa Pelo Investidor Brasileiro https://www.b3.com.br/data/files/DE/47/57/09/B3866710D32004679C094EA8/Pesquisa%20PF_Apresentacao_final_11_12_20_.pdf
 
 ## Aplicações utilizadas como referência para o projeto
-> KINVO. Todos os seus investimentos num só lugar. Disponível em: https://www.kinvo.com.br/
+> **KINVO**. Todos os seus investimentos num só lugar. Disponível em: https://www.kinvo.com.br/
 
-> COINMARKETCAP. Cryptocurrency Prices, Charts And Market Capitalizations. Disponível em: https://coinmarketcap.com/
+> **COINMARKETCAP**. Cryptocurrency Prices, Charts And Market Capitalizations. Disponível em: https://coinmarketcap.com/
 
-> XANGLE. Crypto Disclosures & Insights. Disponível em: https://xangle.io/
+> **XANGLE**. Crypto Disclosures & Insights. Disponível em: https://xangle.io/
