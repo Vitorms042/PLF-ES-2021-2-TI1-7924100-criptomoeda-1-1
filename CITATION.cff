@@ -1,0 +1,23 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: Mentor
+authors:
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names:   
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Dias Ferreira da Rocha
+    given-names: Roberto Felipe 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Vieira Carneiro
+    given-names: Rommel 
+keywords:
+  - Gestão de Patrimônio
+  - Investidores
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/PLF-ES-2021-2-TI1-7924100-criptomoeda-1-1
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2021-12-22
