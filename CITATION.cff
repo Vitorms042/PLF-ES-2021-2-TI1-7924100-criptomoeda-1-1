@@ -2,10 +2,10 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: Mentor
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:   
+  - family-names: Alexi
+    given-names: Arhur
+  - family-names: Ferreira
+    given-names: Esdras
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Dias Ferreira da Rocha
